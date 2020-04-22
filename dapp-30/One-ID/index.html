@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BullRun Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/Content/Front-theme/theme-assets/images/ico/favicon.ico">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/fonts/themify/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/fonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/vendors/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/vendors/flipclock/flipclock.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/vendors/swiper/css/swiper.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- END CRYPTO CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/theme-assets/css/template-counter.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/assets/css/style.css">
+    <!-- END Custom CSS-->
+
+
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/Content/Front-theme/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--===============================================================================================-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/Content/Scripts/Signin.js"></script>
+
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script src="/content/assets/js/socialjs.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            socialjs.init({
+                container: '.socialjs',
+                https: true
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-form">
+                 
+                   
+                    <form class="w-100 validate-form" onsubmit="return false" id="signupform">
+                        <span class="login100-form-title p-b-10 text-white">
+                            Account Signup
+                            <div class="ttttt"></div>
+                        </span>
+                        <div class="w-100">
+                            <img src="/Content/assets/img/wallets.png" class="w-100 p-b-34" />
+                        </div>
+                        <p class="text-center text-azure m-b-5" style="color: #d4d8d8;">
+                            You don't have referral code use ' 1 ' as referral id.
+                        </p>
+
+                        <div class="wrap-input100 validate-input m-b-20" data-validate="Type user name">
+                            <input id="first-name" class="input100" type="text" name="referral" placeholder="Enter Referral code">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <p class="error m-b-10 alert alert-danger" style="display:none">
+
+                        </p>
+                        <p class="m-b-15 text-right text-white">Allready have account? <a href="/User/signin" class="text-white"> Sign in</a></p>
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" id="lgmbtnsup">
+                                Sign up
+                            </button>
+                        </div>
+                        <div class="w-full text-center m-t-30">
+                            <p class="text-white">Contract address</p>
+                            <a href="https://etherscan.io/address/0x7a78E3D47C9E20836aca681956D8A972c0C79389" class="text-success" target="_blank">
+                                0x7a78E3D47C9E20836aca681956D8A972c0C79389 <i class="fa fa-external-link"></i>
+                            </a>
+                        </div>
+
+                    </form>
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 text-center d-flex d-block m-t-10">
+                        <div class="row">
+                            <p class="text-white col-lg-12">Social Links</p>
+                            <div class="socialjs col-lg-12 m-t-10">
+
+                                <a class="sharebutton facebook btn " target="_blank" style="background-color:#3b5998;color:white" href="https://www.facebook.com/bullrun.live"><i class=" fa fa-facebook"></i></a>
+
+                                <a class="sharebutton twitter btn" target="_blank" style="background-color:#00acee;color:white" href="https://twitter.com/BULLRUNLIVE"><i class=" fa fa-twitter"></i> </a>
+                                <a class="sharebutton linkedin btn" target="_blank" style="background-color:#0e76a8;color:white" href="#"><i class=" fa fa-linkedin"></i> </a>
+
+                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#0088cc;color:white" href="https://t.me/BullRunlive"><i class="fa fa-telegram"></i> </a>
+                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#ff0000;color:white" href="#"><i class="fa fa-youtube"></i> </a>
+                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#dd2a7b ;color:white" href="http://instagram.com/bullrunlive"><i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="login100-more ">
+                    <div class="col-lg-12 m-t-30">
+                        <a href="/">  <img src="/Content/Front-theme/theme-assets/images/bullrunlogo1.png" style="" class="w-100" /></a>
+                    </div>
+                    <div class="w-100 m-t-100 m-l-auto m-r-auto text-center download-buttons">
+                        <a href="https://metamask.io/" target="_blank" class="m-b-5 btn btn-success" style="background-color:#062d54;border-color:#062d54">Download Metamask</a>
+                        <a href="https://trustwallet.com/" target="_blank" class="m-b-5 btn btn-info">Download TrustWallet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="dropDownSelect1"></div>
+
+
+
+</body>
+</html>
